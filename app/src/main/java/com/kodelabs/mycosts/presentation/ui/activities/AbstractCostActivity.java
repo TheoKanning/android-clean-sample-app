@@ -18,7 +18,7 @@ import com.kodelabs.mycosts.utils.DateUtils;
 
 import java.util.Date;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import io.codetail.widget.RevealFrameLayout;
@@ -30,22 +30,22 @@ public abstract class AbstractCostActivity extends AppCompatActivity
         implements DatePickerDialog.OnDateSetListener {
 
 
-    @Bind(R.id.reveal_layout)
+    @BindView(R.id.reveal_layout)
     RevealFrameLayout mRevealLayout;
 
-    @Bind(R.id.toolbar)
+    @BindView(R.id.toolbar)
     Toolbar mToolbar;
 
-    @Bind(R.id.input_date)
+    @BindView(R.id.input_date)
     TextView mDateTextView;
 
-    @Bind(R.id.input_amount)
+    @BindView(R.id.input_amount)
     EditText mAmountEditText;
 
-    @Bind(R.id.input_description)
+    @BindView(R.id.input_description)
     EditText mDescriptionEditText;
 
-    @Bind(R.id.input_cost_category)
+    @BindView(R.id.input_cost_category)
     Spinner mCategorySpinner;
 
     protected Date   mSelectedDate;

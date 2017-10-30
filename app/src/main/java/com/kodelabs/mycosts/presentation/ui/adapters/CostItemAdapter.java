@@ -21,7 +21,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -43,10 +43,10 @@ public class CostItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        @Bind(R.id.cost_item_title)
+        @BindView(R.id.cost_item_title)
         public TextView mTitle;
 
-        @Bind(R.id.cost_item_total_value)
+        @BindView(R.id.cost_item_total_value)
         public TextView mTotalCost;
 
         private RecyclerViewClickListener mListener;
@@ -76,7 +76,7 @@ public class CostItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     public static class ExpandedViewHolder extends RecyclerView.ViewHolder
             implements View.OnClickListener, IndividualCostViewClickListener {
 
-        @Bind(R.id.card_expanded_costview)
+        @BindView(R.id.card_expanded_costview)
         public ExpandedCostView mExpandedCostView;
 
         private RecyclerViewClickListener mListener;
